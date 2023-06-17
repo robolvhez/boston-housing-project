@@ -1,0 +1,36 @@
+\usepackage[spanish]{babel}
+\usepackage[margin=0.75in,top=1in,bottom=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{lipsum}
+\usepackage{csquotes}
+\usepackage{float}
+\usepackage[backend=biber,style=ieee]{biblatex}
+    \addbibresource{biblio.bib}
+\usepackage{hyperref}
+    \hypersetup{%
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue,
+    citecolor=blue}
+\usepackage{ragged2e}
+\usepackage{graphicx}
+\usepackage{adjustbox}
+\usepackage[font=footnotesize,labelfont=bf]{caption}
+\usepackage{subcaption}
+\usepackage{dirtytalk}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{booktabs}
+\usepackage{listings}
+    \NewDocumentCommand{\codeword}{v}{%
+    \texttt{\textcolor{orange}{#1}}%
+    }
+    \lstset{language=C,keywordstyle={\bfseries \color{orange}}}
+\usepackage{tabularx}
+    \newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+    \newcolumntype{Y}{>{\centering\arraybackslash}X}
+%\usepackage{kpfonts}
+\usepackage{cleveref}
+\usepackage{parskip}
+
+\captionsetup[subfigure]{subrefformat=simple,labelformat=simple}
+\renewcommand\thesubfigure{(\alph{subfigure})}
